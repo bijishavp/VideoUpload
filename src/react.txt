@@ -1,0 +1,120 @@
+to build project : npm run build
+
+to install react bootstrap : npm install react-bootstrap bootstrap
+
+to install react icons :npm i feather-icons-react
+
+
+        navigation in react
+       ---------------------
+
+react router dom library install : npm i react-router-dom
+
+backend creation-
+-----------------
+backend:
+package.json creation - npm init -y
+json server install --npm i json-server
+
+.gitignore file create 
+index.js file create
+pckg.json--test maati start akuka then"node index.js"
+
+index.js browerrouter tag on app tag
+
+
+autoplay youtube vdeo : give autoplay=1 in end 
+<iframe width={'100%'} height={"400px"} src="https://www.youtube.com/embed/0WtRNGubWGA?autoplay=1"
+
+
+ common api call
+ single api call create  
+ get post deleting  method give as args of created apicallmethod when needed
+ js api call can done...but jsx in react can't ..we use axios
+ axios js library to api call
+package install first
+
+axios features
+
+Make XMLHttpRequests from the browser
+Make http requests from node.js
+Supports the Promise API
+Intercept request and response
+Transform request and response data
+Cancel requests
+Automatic transforms for JSON data
+🆕 Automatic data object serialization to "multipart/form-data(files loading,videos) and x-www-form-urlencoded" body encodings
+Client side support for protecting against XSRF
+
+
+Request Config
+
+These are the available config options for making requests. Only the url is required. Requests will default to GET if method is not specified.
+
+
+
+{
+  // `url` is the server URL that will be used for the request
+  url: '/user',
+
+  // `method` is the request method to be used when making the request
+  method: 'get', // default
+
+  // `baseURL` will be prepended to `url` unless `url` is absolute.
+  // It can be convenient to set `baseURL` for an instance of axios to pass relative URLs
+  // to methods of that instance.
+  baseURL: 'https://some-domain.com/api/',
+
+  
+  // `headers` are custom headers to be sent
+  headers: {'X-Requested-With': 'XMLHttpRequest'},
+
+  
+
+  // `data` is the data to be sent as the request body
+  // Only applicable for request methods 'PUT', 'POST', 'DELETE , and 'PATCH'
+  // When no `transformRequest` is set, must be of one of the following types:
+  // - string, plain object, ArrayBuffer, ArrayBufferView, URLSearchParams
+  // - Browser only: FormData, File, Blob
+  // - Node only: Stream, Buffer, FormData (form-data package)
+  data: {
+    firstName: 'Fred'
+  },
+
+  // syntax alternative to send data into the body
+  // method post
+  // only the value is sent, not the key
+  data: 'Country=Brasil&City=Belo Horizonte',
+
+body give inside dataie body is data
+  
+}
+
+backend video embed lins is stored ..but we are giving youtube link for adding video..so need to change link to embed link for auto playin it....need tocreate seperate fn
+
+
+react toastify library - to make alerts beautiful
+install it in frond end --- npm i react-toastify
+
+add cheyyumbo thanne view il kanikkanm...ipo refresh eydha kanikkullu
+
+App.js(parent component)-
+childs--- header,footer,landingpage,home
+home component childs-----add,view,category
+
+add.js component to view.js component
+
+
+ie,component dta sharing...statelifting
+we sknow on;y parent to child data sharing using props ie usestate etc
+
+child to child
+
+add.js ....response .data 
+
+view.js ... this reponse triggered in useeffect hook get allvideo fn 
+
+add view siblings of same parent home ie child of app.js
+in Add.js when response data is succesful-200 then  hold response data  by 
+a state in home.js  (add.js parent component)
+
